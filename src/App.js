@@ -63,6 +63,9 @@ function App() {
                 prevSearchTerm={prevSearchTerm}
               />
             </Route>
+            <Route path="/login">
+              <Login color={color} />
+            </Route>
             <Route path="/info">
               <Info color={color} />
             </Route>

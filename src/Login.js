@@ -3,8 +3,10 @@ import "./Login.css";
 import { auth, provider } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer";
+import { useHistory } from "react-router-dom";
 
 function Login({ color }) {
+  const history = useHistory();
   const [{}, dispatch] = useStateValue();
   const signIn = () => {
     auth
@@ -16,6 +18,7 @@ function Login({ color }) {
         });
       })
       .catch((error) => alert(error.message));
+    history.push("/");
   };
 
   return (

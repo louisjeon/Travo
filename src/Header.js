@@ -32,6 +32,14 @@ function Header({ color, getPlaces, setPrevSearchTerm }) {
     setSearchTerm(e.target.value);
   };
 
+  const loginOrInfo = () => {
+    if (user) {
+      return "./info";
+    } else {
+      return "./login";
+    }
+  };
+
   return (
     <div className="header">
       <Link to="/">
@@ -72,7 +80,7 @@ function Header({ color, getPlaces, setPrevSearchTerm }) {
         />
       </div>
       <div className="user" style={{ color: `${color}` }}>
-        <Link to="/info">
+        <Link to={loginOrInfo}>
           <img
             src={
               user
@@ -96,7 +104,7 @@ function Header({ color, getPlaces, setPrevSearchTerm }) {
             flexDirection: "column",
           }}
         >
-          <Link to="/info" style={{ textDecoration: "none" }}>
+          <Link to={loginOrInfo} style={{ textDecoration: "none" }}>
             <h2
               style={{
                 cursor: "pointer",
