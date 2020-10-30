@@ -1,0 +1,37 @@
+.settings {
+  border: 2px solid;
+  border-radius: 50px;
+  height: 75vh;
+  display: flex;
+}
+
+.setting {
+  border: 2px solid;
+  border-radius: 50px;
+  height: 75vh;
+  width: 29.7vw;
+}
+
+.setting > h1 {
+  margin-left: 2vw;
+  font-size: 40px;
+  margin-top: 1vh;
+}
+
+.settingInner {
+  border: 2px solid;
+  border-radius: 50px;
+  height: 65vh;
+  width: 29.7vw;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.smallCard {
+  border: 2px solid;
+  height: 10vh;
+  width: 14.5vw;
+  background-size: cover;
+  cursor: pointer;
+}

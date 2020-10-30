@@ -1,0 +1,11 @@
+.body {
+  height: 75vh;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.outerBody {
+  display: flex;
+  justify-content: center;
+}

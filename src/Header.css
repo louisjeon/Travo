@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  min-height: 15vh;
+}
+
+.logo {
+  margin-top: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.searchBar:focus {
+  outline-width: 0;
+}
+
+.user {
+  width: 20vw;
+  display: flex;
+  align-self: center;
+}
+
+.middleHeader {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+}
+
+.userIcon {
+  width: 12vh;
+  height: 12vh;
+  margin-top: 1.4vh;
+}
+
+.icons {
+  margin-top: 15px;
+}
