@@ -1,7 +1,7 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC3eu2gg21c05x6a8-8XPSFA1erZgccXr0",
+  apiKey: "",
   authDomain: "travo-fcd0f.firebaseapp.com",
   databaseURL: "https://travo-fcd0f.firebaseio.com",
   projectId: "travo-fcd0f",
