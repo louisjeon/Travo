@@ -1,27 +1,22 @@
 .App {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  background-image: url("https://mms.businesswire.com/media/20191202005499/en/759781/5/Oklo_Aurora_powerhouse_arctic_night_rendering.jpg");
-  background-size: cover;
 }
 
 .travo {
-  min-height: 90vh;
   width: 90vw;
   border: 2px solid red;
   border-radius: 50px;
   margin-left: 5vw;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .footer {
   align-self: center;
   width: 88vw;
-  margin-left: 1vw;
   border-radius: 50px;
   align-items: center;
 }

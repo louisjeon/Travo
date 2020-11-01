@@ -17,7 +17,7 @@ function Settings({ color, setBGURL, setFont, setEventNum, colors }) {
     ],
     [
       3,
-      "https://mms.businesswire.com/media/20191202005499/en/759781/5/Oklo_Aurora_powerhouse_arctic_night_rendering.jpg",
+      "https://images.pexels.com/photos/2385210/pexels-photo-2385210.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
     ],
     [
       4,
@@ -94,7 +94,7 @@ function Settings({ color, setBGURL, setFont, setEventNum, colors }) {
       </div>
       <div className="setting">
         <h1>Change Font Family</h1>
-        <div className="settingInner">
+        <div className="settingInner font">
           {FONTS.map((FONT) => (
             <div
               className="smallCard"
@@ -112,7 +112,7 @@ function Settings({ color, setBGURL, setFont, setEventNum, colors }) {
       </div>
       <div className="setting">
         <h1>Change Theme Color</h1>
-        <div className="settingInner">
+        <div className="settingInner clrs">
           {colors.map((COLOR) => (
             <div
               className="smallCard"

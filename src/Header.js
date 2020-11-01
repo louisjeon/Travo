@@ -42,42 +42,51 @@ function Header({ color, getPlaces, setPrevSearchTerm }) {
 
   return (
     <div className="header">
-      <Link to="/">
-        <img
-          src={process.env.PUBLIC_URL + `/Travo_${color}.png`}
-          alt="e"
-          style={{ width: "20vw", height: "100px", objectFit: "cover" }}
-          className="logo"
-        />
-      </Link>
-      <div className="middleHeader">
-        <form onSubmit={handleOnSubmit} style={{ alignSelf: "center" }}>
-          <input
-            value={searchTerm}
-            type="text"
-            className="searchBar"
-            placeholder="Type your interest..."
+      <div className="headerLeft">
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <h1
             style={{
-              backgroundColor: "transparent",
-              border: `2px solid ${color}`,
-              fontSize: "30px",
-              color: `${color}`,
-              height: "40px",
-              borderRadius: "50px",
-              textIndent: "20px",
+              WebkitTextStroke: `3px ${color}`,
+              color: "transparent",
+              fontSize: "100px",
+              marginTop: "0",
+              marginBottom: "0",
+              marginLeft: "50px",
+              marginRight: "50px",
             }}
-            onChange={handleOnChange}
+          >
+            Travo
+          </h1>
+        </Link>
+        <div className="middleHeader">
+          <form onSubmit={handleOnSubmit} style={{ alignSelf: "center" }}>
+            <input
+              value={searchTerm}
+              type="text"
+              className="searchBar"
+              placeholder="Type your interest..."
+              style={{
+                backgroundColor: "transparent",
+                border: `2px solid ${color}`,
+                fontSize: "30px",
+                color: `${color}`,
+                height: "40px",
+                borderRadius: "50px",
+                textIndent: "20px",
+              }}
+              onChange={handleOnChange}
+            />
+          </form>
+          <SearchIcon
+            style={{
+              color: `${color}`,
+              fontSize: "50px",
+              cursor: "pointer",
+              alignSelf: "center",
+            }}
+            onClick={handleOnSubmit}
           />
-        </form>
-        <SearchIcon
-          style={{
-            color: `${color}`,
-            fontSize: "50px",
-            cursor: "pointer",
-            alignSelf: "center",
-          }}
-          onClick={handleOnSubmit}
-        />
+        </div>
       </div>
       <div className="user" style={{ color: `${color}` }}>
         <Link to={loginOrInfo}>
@@ -109,7 +118,7 @@ function Header({ color, getPlaces, setPrevSearchTerm }) {
               style={{
                 cursor: "pointer",
                 color: `${color}`,
-                height: "3vh",
+                height: "20px",
               }}
             >
               {user ? user?.displayName : "Sign In"}

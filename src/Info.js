@@ -13,9 +13,7 @@ function Info({ color }) {
       <div
         className="infoInner"
         style={{
-          marginLeft: "30vw",
           display: "flex",
-          marginTop: "18vh",
           flexDirection: "column",
         }}
       >

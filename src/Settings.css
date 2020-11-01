@@ -34,4 +34,45 @@
   width: 14.5vw;
   background-size: cover;
   cursor: pointer;
+  min-width: 150px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+  .settings {
+    flex-direction: column;
+  }
+  .setting {
+    width: 89vw;
+  }
+  .settingInner {
+    width: 90vw;
+    height: 20vh;
+  }
+  .clrs {
+    height: 33vh;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 860px) {
+  .settingInner {
+    height: 31vh;
+  }
+  .font {
+    height: 43vh;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 690px) {
+  .settingInner {
+    height: 42vh;
+  }
+  .clrs {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 515px) {
+  .settingInner {
+    height: 63vh;
+  }
 }

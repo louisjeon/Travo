@@ -2,4 +2,27 @@
   border: 2px solid;
   border-radius: 50px;
   height: 75vh;
+  display: flex;
+  justify-content: center;
+}
+
+.infoInner {
+  transform: translateX(5%);
+  margin-top: 18vh;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+  .infoInner {
+    transform: inherit;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 840px) {
+  .infoInner {
+    transform: inherit;
+    margin-top: 10vh;
+  }
+  .infoBottom {
+    flex-direction: column;
+  }
 }

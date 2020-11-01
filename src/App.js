@@ -90,23 +90,23 @@ function App() {
               />
             </Route>
           </Switch>
-          <footer
-            className="footer"
+        </div>
+        <div
+          className="footer"
+          style={{
+            color: `${color}`,
+            // backgroundColor: "rgba(0,0,0,0.9)",
+            height: "50px",
+          }}
+        >
+          <p
             style={{
               color: `${color}`,
-              // backgroundColor: "rgba(0,0,0,0.9)",
-              height: "5vh",
+              textAlign: "center",
             }}
           >
-            <p
-              style={{
-                color: `${color}`,
-                textAlign: "center",
-              }}
-            >
-              ©Eunbae Jeon {currentYear}, All rights reserved.
-            </p>
-          </footer>
+            ©Eunbae Jeon {currentYear}, All rights reserved.
+          </p>
         </div>
       </div>
     </Router>
